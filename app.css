@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*:focus {
+  outline-color: #40dead;
+}
+#sub:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #dbfff5;
+}
+#card {
+  border-radius: 1rem;
+  text-align: center;
+  width: 35%;
+  margin: 8rem auto;
+  padding-bottom: 1rem;
+  box-shadow: 0.4px 0.6px 17px 0 #00000028;
+}
+#amount,
+#message,
+#sub {
+  display: block;
+  margin: 0 auto;
+}
+#amount {
+  width: 88%;
+  height: 3rem;
+  background: #dbfff5;
+}
+#sub {
+  margin-top: 4rem;
+  cursor: pointer;
+  border: none;
+  background: #40dead;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 80%;
+  height: 3rem;
+  border-radius: 0.4rem;
+  box-shadow: 5px 10px 8px #6df3c936;
+}
+#sub:hover {
+  transform: scale(1.05);
+}
+#message {
+  margin: 2.3rem auto 1rem auto;
+  width: 76%;
+  font-size: 0.9rem;
+}
+img {
+  margin-top: -6rem;
+  width: 11.25rem;
+}
+#green {
+  background: #40dead;
+  border-radius: 1rem 1rem 0 0;
+  height: 10rem;
+}
+#green::after {
+  background: url(robot.svg);
+}
+footer {
+  text-align: center;
+}
+footer p {
+  background: linear-gradient(57deg, #212e28, #478e58);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+
+/**************Media queries*************/
+@media only screen and (max-width: 1000px) {
+  img {
+    width: 11rem;
+  }
+  #card {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 888px) {
+  img {
+    width: 10rem;
+  }
+  #card {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #card {
+    width: 80%;
+  }
+  img {
+    margin-top: -5rem;
+    width: 8rem;
+  }
+}
